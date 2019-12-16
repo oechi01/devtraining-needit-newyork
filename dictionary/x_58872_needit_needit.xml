@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element audit="true" extends="task" label=" NeedIt" max_length="40" name="x_58872_needit_needit" sizeclass="19" type="collection">
+    <element audit="true" extends="task" label=" NeedIt" max_length="40" name="x_58872_needit_needit" sizeclass="26" type="collection">
+        <element attributes="target_field=percent_complete_target,target_threshold_colors=0:FireBrick;33:OrangeRed;66:LemonChiffon;90:MediumSeaGreen,target_field=target" label="% complete" max_length="15" name="complete" type="percent_complete"/>
         <element label="Karol test" max_length="40" name="karol_test" type="boolean"/>
         <element label="Requested for email" mandatory="true" max_length="40" name="requested_for_email" type="string"/>
+        <element label="Target" max_length="20" name="target" type="decimal"/>
         <element attributes="edge_encryption_enabled=true" label="Other" max_length="40" name="u_other" type="string"/>
         <element attributes="encode_utf8=false" label="Requested for" mandatory="true" max_length="32" name="u_requested_for" reference="sys_user" type="reference"/>
         <element attributes="edge_encryption_enabled=true" choice="3" default="legal" label="Request type" mandatory="true" max_length="40" name="u_request_type" type="string">
